@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ваше Имя — 3D Художник</title>
+  <style>
+    /* Базовые стили */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f15;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    nav {
+      background: #111;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #4cc9f0;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+      color: #4cc9f0;
+    }
+
+    /* Галерея */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .project {
+      background: #1a1a2e;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project h3 {
+      padding: 1rem;
+      text-align: center;
+    }
+
+    /* О себе */
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    /* Контакты */
+    .contact-info {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+
+    .contact-info a {
+      color: #4cc9f0;
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0a0a12;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { margin: 0 0.8rem; font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ваше Имя</h1>
+    <p>3D-художник • Моделлер • Визуализатор</p>
+  </header>
+
+  <nav>
+    <a href="#portfolio">Портфолио</a>
+    <a href="#about">Обо мне</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+
+  <section id="portfolio">
+    <h2 class="section-title">Портфолио</h2>
+    <div class="gallery">
+      <!-- Примеры работ (замените на свои) -->
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400/2a2a4a/ffffff?text=Проект+1" alt="Проект 1">
+        <h3>Архитектурная визуализация</h3>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400/2a2a4a/ffffff?text=Проект+2" alt="Проект 2">
+        <h3>Персонаж для игры</h3>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400/2a2a4a/ffffff?text=Проект+3" alt="Проект 3">
+        <h3>Промышленный дизайн</h3>
+      </div>
+      <div class="project">
+        <img src="https://via.placeholder.com/600x400/2a2a4a/ffffff?text=Проект+4" alt="Проект 4">
+        <h3>Анимационный ролик</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">Обо мне</h2>
+    <div class="about-content">
+      <p>
+        Привет! Я — 3D-художник с опытом более 5 лет в создании реалистичных моделей, архитектурной визуализации, персонажей и анимации.
+        Работаю в таких программах, как Blender, Maya, ZBrush, Substance Painter и Unreal Engine.
+        Мои проекты — это сочетание технической точности и художественного видения.
+      </p>
+      <br>
+      <p>
+        Открыт к сотрудничеству: фриланс, коммерческие заказы, участие в игровых и кинопроектах.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Связаться со мной</h2>
+    <div class="contact-info">
+      <p>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>📱 Telegram / WhatsApp: <a href="https://t.me/yourusername">@yourusername</a></p>
+      <p>🔗 <a href="https://artstation.com/yourprofile" target="_blank">ArtStation</a> | 
+         <a href="https://behance.net/yourprofile" target="_blank">Behance</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Ваше Имя. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
